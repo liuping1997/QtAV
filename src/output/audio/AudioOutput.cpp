@@ -208,7 +208,7 @@ AudioOutputPrivate::~AudioOutputPrivate()
 {
     if (backend) {
         backend->close();
-        delete backend;
+        backend->deleteLater();
     }
 }
 
